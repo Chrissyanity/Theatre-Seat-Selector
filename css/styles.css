@@ -1,0 +1,27 @@
+regular seats{
+  background: #8F3F99;
+  width: 100px;
+	height: 100px;
+
+}
+reserved seats {
+  background-color: #3F0B46;
+  opacity: 0.5;
+}
+
+handicapped seats {
+  width: 100px;
+	height: 100px;
+	background: #8F3F99;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+}
+body {
+  background-color: #4E4B4E;
+  background-repeat: no-repeat;
+
+}
+/*div {
+  border: 2px solid red;
+}*/
