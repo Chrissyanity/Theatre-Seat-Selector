@@ -1,9 +1,25 @@
-regular seats{
+.reclinerSeat{
   background: #8F3F99;
-  width: 100px;
-	height: 100px;
+  display: inline-block;
+  max-width: 175px;
+  height: 125px;
+  width: 15%;
+  border-radius: 10%;
 
 }
+.regularSeat{
+  background: #8F3F99;
+  width: 12.2%;
+  max-width: 150px;
+  height: 100px;
+  display: inline-block;
+  border-radius: 10%;
+}
+
+.row {
+  text-align: center;
+}
+
 reserved seats {
   background-color: #3F0B46;
   opacity: 0.5;
@@ -22,6 +38,6 @@ body {
   background-repeat: no-repeat;
 
 }
-/*div {
+div {
   border: 2px solid red;
-}*/
+}
