@@ -1,5 +1,5 @@
 .reclinerSeat {
-    background: #8F3F99;
+    background: silver;
     display: inline-block;
     max-width: 175px;
     height: 125px;
@@ -8,7 +8,7 @@
 }
 
 .regularSeat {
-    background: #8F3F99;
+    background: silver;
     width: 12.2%;
     max-width: 150px;
     height: 100px;
@@ -38,8 +38,16 @@
 }
 
 .hover {
+    /*background-color: #3F0B46;*/
+    opacity: 0.4;
+}
+
+.selectedSeat {
+    background-color: #8F3F99;
+}
+
+.reservedSeat {
     background-color: #3F0B46;
-    opacity: 0.5;
 }
 
 handicapped seats {
@@ -56,9 +64,9 @@ body {
     background-repeat: no-repeat;
 }
 
-div {
+/*div {
     border: 1px solid blue;
-}
+}*/
 
 .theaterScreen {
     max-width: 100%;
