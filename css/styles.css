@@ -93,3 +93,28 @@ body {
   color: #000000;
 
 }
+.seatLegend {
+  list-style: none;
+  
+}
+.seatLegend li {
+  float: left;
+  margin-right: 10px;
+}
+.seatLegend span {
+  border: 1px solid #ccc;
+  float: left;
+  width: 12px;
+  height: 12px;
+  margin: 2px;
+}
+
+.seatLegend .openLegend {
+  background-color: silver;
+}
+.seatLegend .selectLegend {
+  background-color: #8F3F99;
+}
+.seatLegend .reserveLegend {
+  background-color: #0000ff;
+}
