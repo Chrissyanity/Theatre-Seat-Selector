@@ -28,27 +28,29 @@ $(function() {
 
     $('.reclinerSeat').on("click",function(event) {
         var id = event.target.id;
+        if ($.inArray( id, clickedSeats ) > -1 ) {
+            var itemtoRemove = id;
+            clickedSeats.splice($.inArray(id, clickedSeats),1);
+            console.log(clickedSeats);
+        } else {
         clickedSeats.push(id);
         console.log(clickedSeats);
         $('#seatList').text(clickedSeats);
-        
-
+    };
     });
 
     $('.regularSeat').on("click", function(event) {
         var id = event.target.id;
+        if ($.inArray( id, clickedSeats ) > -1 ) {
+            var itemtoRemove = id;
+            clickedSeats.splice($.inArray(id, clickedSeats),1);
+            console.log(clickedSeats);
+        } else {
         clickedSeats.push(id);
         console.log(clickedSeats);
         $('#seatList').text(clickedSeats);
+    };
     });
-
-
-
-    var itemtoRemove = id;
-    clickedSeats.splice($.inArray(itemtoRemove, clickedSeats),1);
-    console.log(clickedSeats);
-
-
 
 
 
