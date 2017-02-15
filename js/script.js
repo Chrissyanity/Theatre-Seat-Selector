@@ -19,6 +19,29 @@ $(function() {
         $(this).toggleClass("selectedSeat");
     });
 
+    $('.regularSeat').click(function() {
+        $(this).toggleClass("selectedSeat");
+    });
+
+
+var clickedSeats = [];
+
+$('.reclinerSeat').on("click", function(event) {
+var id = event.target.id;
+clickedSeats.push(id);
+console.log(clickedSeats);
+
+});
+
+$('.regularSeat').on("click", function(event) {
+var id = event.target.id;
+clickedSeats.push(id);
+console.log(clickedSeats);
+
+});
+
+
+
 
 
 
