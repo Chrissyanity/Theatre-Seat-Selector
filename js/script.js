@@ -29,6 +29,7 @@ $(function() {
     $('.reclinerSeat').on("click",function(event) {
         var id = event.target.id;
         if ($.inArray( id, clickedSeats ) > -1 ) {
+            var itemtoRemove = id;
             clickedSeats.splice($.inArray(id, clickedSeats),1);
             console.log(clickedSeats);
         } else {
@@ -42,6 +43,7 @@ $(function() {
     $('.regularSeat').on("click", function(event) {
         var id = event.target.id;
         if ($.inArray( id, clickedSeats ) > -1 ) {
+            var itemtoRemove = id;
             clickedSeats.splice($.inArray(id, clickedSeats),1);
             console.log(clickedSeats);
         } else {
@@ -53,21 +55,19 @@ $(function() {
     });
 
     $('#reserveButton').on('click', function(){
-        var lastName = $('#lastName1').val();
         clickedSeats.forEach(function(i){
             var idTemp = '#' + i;
-            $(idTemp).removeClass('selectedSeat').addClass('reservedSeat').text(lastName).off('click');
+            $(idTemp).removeClass('selectedSeat').addClass('reservedSeat');
 
-
-        })
-        clickedSeats = [];
+        });
+        clickedSeats=[];
     })
 
+    //Reset modal
+    $('.modal').on('hidden.bs.modal', function(){
+        $(this).find('form')[0].reset();
+    });
 
-//Reset modal
-$('.modal').on('hidden.bs.modal', function(){
-    $(this).find('form')[0].reset();
-});
 
 
 });
