@@ -56,9 +56,8 @@ $(function() {
 
     $('#reserveButton').on('click', function(){
         clickedSeats.forEach(function(i){
-            var blah = '#' + i;
-            console.log(blah);
-            $(blah).removeClass('.selectedSeat').addClass('.reservedSeat');
+            var idTemp = '#' + i;
+            $(idTemp).removeClass('selectedSeat').addClass('reservedSeat');
 
         })
     })
