@@ -5,9 +5,9 @@
     height: 125px;
     width: 15%;
     /*border-radius: 10%;*/
-    border-radius: 90px 90px 0 0;
-     -moz-border-radius: 90px 90px 0 0;
-     -webkit-border-radius: 90px 90px 0 0;
+    border-radius: 20px 20px 90px 90px;
+     -moz-border-radius: 20px 20px 90px 90px;
+     -webkit-border-radius: 20px 20px 90px 90px;
 }
 
 .regularSeat {
@@ -95,7 +95,7 @@ body {
 }
 .seatLegend {
   list-style: none;
-  
+
 }
 .seatLegend li {
   float: left;
@@ -116,5 +116,5 @@ body {
   background-color: #8F3F99;
 }
 .seatLegend .reserveLegend {
-  background-color: #0000ff;
+  background-color: #3F0B46;
 }
