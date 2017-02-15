@@ -14,7 +14,7 @@ $(function() {
 
 
 
-//toggle color on selected seats so users can unselect seats on second click.
+    //toggle color on selected seats so users can unselect seats on second click.
     $('.reclinerSeat').click(function() {
         $(this).toggleClass("selectedSeat");
     });
@@ -23,28 +23,34 @@ $(function() {
         $(this).toggleClass("selectedSeat");
     });
 
+// Add seats clicked to an array
+    var clickedSeats = [];
 
-var clickedSeats = [];
+    $('.reclinerSeat').on("click",function(event) {
+        var id = event.target.id;
+        if ($.inArray( id, clickedSeats ) > -1 ) {
+            var itemtoRemove = id;
+            clickedSeats.splice($.inArray(id, clickedSeats),1);
+            console.log(clickedSeats);
+        } else {
+        clickedSeats.push(id);
+        console.log(clickedSeats);
+        $('#seatList').text(clickedSeats);
+    };
+    });
 
-$('.reclinerSeat').on("click", function(event) {
-var id = event.target.id;
-clickedSeats.push(id);
-console.log(clickedSeats);
-
-});
-
-$('.regularSeat').on("click", function(event) {
-var id = event.target.id;
-clickedSeats.push(id);
-console.log(clickedSeats);
-
-});
-
-
-
-
-
-
+    $('.regularSeat').on("click", function(event) {
+        var id = event.target.id;
+        if ($.inArray( id, clickedSeats ) > -1 ) {
+            var itemtoRemove = id;
+            clickedSeats.splice($.inArray(id, clickedSeats),1);
+            console.log(clickedSeats);
+        } else {
+        clickedSeats.push(id);
+        console.log(clickedSeats);
+        $('#seatList').text(clickedSeats);
+    };
+    });
 
 
 
