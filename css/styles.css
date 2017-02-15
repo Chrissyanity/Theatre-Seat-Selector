@@ -4,7 +4,10 @@
     max-width: 175px;
     height: 125px;
     width: 15%;
-    border-radius: 10%;
+    /*border-radius: 10%;*/
+    border-radius: 90px 90px 0 0;
+     -moz-border-radius: 90px 90px 0 0;
+     -webkit-border-radius: 90px 90px 0 0;
 }
 
 .regularSeat {
@@ -50,17 +53,17 @@
     background-color: #3F0B46;
 }
 
-handicapped seats {
-    width: 100px;
-    height: 100px;
-    background: #8F3F99;
-    -moz-border-radius: 50px;
-    -webkit-border-radius: 50px;
-    border-radius: 50px;
-}
+/*#B-1 {
+    width: 15%;
+    height: 125px;
+    background: silver;
+    -moz-border-radius: 60%;
+    -webkit-border-radius: 60%;
+    border-radius: 60%;
+}*/
 
 body {
-    background-color: #4E4B4E;
+    background-color: #A2A0A2;
     background-repeat: no-repeat;
 }
 
@@ -77,4 +80,16 @@ body {
     -webkit-box-shadow: 9px -5px 8px 6px rgba(0, 0, 0, 0.68);
     -moz-box-shadow: 9px -5px 8px 6px rgba(0, 0, 0, 0.68);
     box-shadow: 9px -5px 8px 6px rgba(0, 0, 0, 0.68);
+    border-radius: 90px 90px 0 0;
+     -moz-border-radius: 90px 90px 0 0;
+     -webkit-border-radius: 90px 90px 0 0;
+     margin-bottom: 30px;
+     margin-top: 10px;
+}
+#marquee {
+  font-family: 'Bungee Shade', cursive;
+  /*border-style: dotted;*/
+  font-size: 50px;
+  color: #000000;
+
 }
