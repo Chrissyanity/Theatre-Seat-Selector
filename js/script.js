@@ -35,8 +35,9 @@ $(function() {
         } else {
         clickedSeats.push(id);
         console.log(clickedSeats);
-        $('#seatList').text(clickedSeats);
     };
+    $('#seatList').text(clickedSeats);
+
     });
 
     $('.regularSeat').on("click", function(event) {
@@ -48,9 +49,19 @@ $(function() {
         } else {
         clickedSeats.push(id);
         console.log(clickedSeats);
-        $('#seatList').text(clickedSeats);
     };
+    $('#seatList').text(clickedSeats);
+
     });
+
+    $('#reserveButton').on('click', function(){
+        clickedSeats.forEach(function(i){
+            var blah = '#' + i;
+            console.log(blah);
+            $(blah).removeClass('.selectedSeat').addClass('.reservedSeat');
+
+        })
+    })
 
 
 
