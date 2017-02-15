@@ -15,8 +15,6 @@ $('.regularSeat').on('mouseover', function(){
 });
 
 
-// $('')
-
 
 
 
