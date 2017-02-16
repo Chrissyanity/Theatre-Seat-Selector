@@ -54,26 +54,17 @@
 }
 
 .pStyling {
-
+font-size: 200%;
+display: inline-block;
 }
 
-/*#B-1 {
-    width: 15%;
-    height: 125px;
-    background: silver;
-    -moz-border-radius: 60%;
-    -webkit-border-radius: 60%;
-    border-radius: 60%;
-}*/
 
 body {
     background-color: #A2A0A2;
     background-repeat: no-repeat;
 }
 
-/*div {
-    border: 1px solid blue;
-}*/
+
 
 .theaterScreen {
     max-width: 100%;

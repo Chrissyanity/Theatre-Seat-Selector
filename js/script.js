@@ -1,5 +1,6 @@
 $(function() {
 
+    //Hover functionality
     $('.reclinerSeat').on('mouseover', function() {
         $(this).addClass('hover')
     }).on('mouseleave', function() {
@@ -23,7 +24,7 @@ $(function() {
         $(this).toggleClass("selectedSeat");
     });
 
-// Add seats clicked to an array
+// Add seats clicked to an array or move selected seats out of array when selected again
     var clickedSeats = [];
 
     $('.reclinerSeat').on("click",function(event) {
@@ -54,16 +55,29 @@ $(function() {
 
     });
 
+
+    //remove event handlers from seats once reserved and mark them as reserved.
+
     $('#reserveButton').on('click', function(){
         clickedSeats.forEach(function(i){
             var idTemp = '#' + i;
+            var lastName = $('#lastName1').val();
             $(idTemp).removeClass('selectedSeat').addClass('reservedSeat').off('click');
+
+
+            // .html('<p class="pStyling">'+lastName+'</p>');
+
+
 
         });
         clickedSeats=[];
     })
 
-    //Reset modal
+
+
+
+
+    //Reset modal upon exit
     $('.modal').on('hidden.bs.modal', function(){
         $(this).find('form')[0].reset();
     });
