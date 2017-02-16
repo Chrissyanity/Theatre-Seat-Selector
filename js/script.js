@@ -24,60 +24,62 @@ $(function() {
         $(this).toggleClass("selectedSeat");
     });
 
-// Add seats clicked to an array or move selected seats out of array when selected again
+    // Add seats clicked to an array or move selected seats out of array when selected again
     var clickedSeats = [];
 
-    $('.reclinerSeat').on("click",function(event) {
+    $('.reclinerSeat').on("click", function(event) {
         var id = event.target.id;
-        if ($.inArray( id, clickedSeats ) > -1 ) {
-            clickedSeats.splice($.inArray(id, clickedSeats),1);
+        if ($.inArray(id, clickedSeats) > -1) {
+            clickedSeats.splice($.inArray(id, clickedSeats), 1);
             console.log(clickedSeats);
         } else {
-        clickedSeats.push(id);
-        console.log(clickedSeats);
-    };
-    $('#seatList').text(clickedSeats);
+            clickedSeats.push(id);
+            console.log(clickedSeats);
+        };
+        $('#seatList').text(clickedSeats);
 
     });
 
     $('.regularSeat').on("click", function(event) {
         var id = event.target.id;
-        if ($.inArray( id, clickedSeats ) > -1 ) {
-            clickedSeats.splice($.inArray(id, clickedSeats),1);
+        if ($.inArray(id, clickedSeats) > -1) {
+            clickedSeats.splice($.inArray(id, clickedSeats), 1);
             console.log(clickedSeats);
         } else {
-        clickedSeats.push(id);
-        console.log(clickedSeats);
-    };
-    $('#seatList').text(clickedSeats);
+            clickedSeats.push(id);
+            console.log(clickedSeats);
+        };
+        $('#seatList').text(clickedSeats);
 
     });
 
 
     //remove event handlers from seats once reserved and mark them as reserved.
 
-    $('#reserveButton').on('click', function(){
-        clickedSeats.forEach(function(i){
+    $('#reserveButton').on('click', function() {
+        clickedSeats.forEach(function(i) {
             var idTemp = '#' + i;
             var lastName = $('#lastName1').val();
-            $(idTemp).removeClass('selectedSeat').addClass('reservedSeat').off('click');
-
-
-            // .html('<p class="pStyling">'+lastName+'</p>');
-            //add this code with hidden styling, and then make a mousover event to change that class to visible outside of this forEach loop
-
-
-
+            $(idTemp).removeClass('selectedSeat').addClass('reservedSeat').off('click').html(i + '<br>' + '<span class="pStyling">' + lastName + '</span>');
         });
-        clickedSeats=[];
-    })
+
+
+        clickedSeats = [];
+    });
+
+
+
+    // $('.reclinerSeat').hover(function(){
+    //     $('div span').removeClass('pStyling').next().stop(true,true);
+    // });
+
 
 
 
 
 
     //Reset modal upon exit
-    $('.modal').on('hidden.bs.modal', function(){
+    $('.modal').on('hidden.bs.modal', function() {
         $(this).find('form')[0].reset();
     });
 

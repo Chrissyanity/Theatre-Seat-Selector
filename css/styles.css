@@ -6,10 +6,9 @@
     width: 15%;
     /*border-radius: 10%;*/
     border-radius: 20px 20px 90px 90px;
-     -moz-border-radius: 20px 20px 90px 90px;
-     -webkit-border-radius: 20px 20px 90px 90px;
-     font-size: 200%;
-
+    -moz-border-radius: 20px 20px 90px 90px;
+    -webkit-border-radius: 20px 20px 90px 90px;
+    font-size: 200%;
 }
 
 .regularSeat {
@@ -20,7 +19,6 @@
     display: inline-block;
     border-radius: 10%;
     font-size: 200%;
-
 }
 
 .row {
@@ -44,6 +42,8 @@
     margin-bottom: 5px;
 }
 
+
+
 .hover {
     /*background-color: #3F0B46;*/
     opacity: 0.4;
@@ -58,8 +58,14 @@
 }
 
 .pStyling {
-font-size: 200%;
-display: inline-block;
+    visibility: visible;
+}
+.pStyling2 {
+    visibility: hidden;
+}
+
+div span {
+    visibility: hidden;
 }
 
 
@@ -67,8 +73,6 @@ body {
     background-color: #A2A0A2;
     background-repeat: no-repeat;
 }
-
-
 
 .theaterScreen {
     max-width: 100%;
@@ -80,40 +84,44 @@ body {
     -moz-box-shadow: 9px -5px 8px 6px rgba(0, 0, 0, 0.68);
     box-shadow: 9px -5px 8px 6px rgba(0, 0, 0, 0.68);
     border-radius: 90px 90px 0 0;
-     -moz-border-radius: 90px 90px 0 0;
-     -webkit-border-radius: 90px 90px 0 0;
-     margin-bottom: 30px;
-     margin-top: 10px;
+    -moz-border-radius: 90px 90px 0 0;
+    -webkit-border-radius: 90px 90px 0 0;
+    margin-bottom: 30px;
+    margin-top: 10px;
 }
+
 #marquee {
-  font-family: 'Bungee Shade', cursive;
-  /*border-style: dotted;*/
-  font-size: 50px;
-  color: #000000;
-
+    font-family: 'Bungee Shade', cursive;
+    /*border-style: dotted;*/
+    font-size: 50px;
+    color: #000000;
 }
+
 .seatLegend {
-  list-style: none;
+    list-style: none;
+}
 
-}
 .seatLegend li {
-  float: left;
-  margin-right: 10px;
+    float: left;
+    margin-right: 10px;
 }
+
 .seatLegend span {
-  border: 1px solid #ccc;
-  float: left;
-  width: 12px;
-  height: 12px;
-  margin: 2px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 12px;
+    height: 12px;
+    margin: 2px;
 }
 
 .seatLegend .openLegend {
-  background-color: silver;
+    background-color: silver;
 }
+
 .seatLegend .selectLegend {
-  background-color: #8F3F99;
+    background-color: #8F3F99;
 }
+
 .seatLegend .reserveLegend {
-  background-color: #3F0B46;
+    background-color: #3F0B46;
 }
