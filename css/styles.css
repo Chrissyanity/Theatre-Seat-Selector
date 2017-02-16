@@ -64,51 +64,76 @@
 }
 
 body {
-  font-family: 'Lobster Two', cursive;
-  color: #A4ABB2;
-
-background: linear-gradient(43deg, #717a75, #2597ae, #6b888e, #2597ae);
-background-size: 800% 800%;
-
--webkit-animation: AnimationName 21s ease infinite;
--moz-animation: AnimationName 21s ease infinite;
--o-animation: AnimationName 21s ease infinite;
-animation: AnimationName 21s ease infinite;
+    font-family: 'Lobster Two', cursive;
+    color: #A4ABB2;
+    background: linear-gradient(43deg, #717a75, #2597ae, #6b888e, #2597ae);
+    background-size: 800% 800%;
+    -webkit-animation: AnimationName 21s ease infinite;
+    -moz-animation: AnimationName 21s ease infinite;
+    -o-animation: AnimationName 21s ease infinite;
+    animation: AnimationName 21s ease infinite;
 }
 
 @-webkit-keyframes AnimationName {
-  0%{background-position:94% 0%}
-  50%{background-position:7% 100%}
-  100%{background-position:94% 0%}
+    0% {
+        background-position: 94% 0%
+    }
+    50% {
+        background-position: 7% 100%
+    }
+    100% {
+        background-position: 94% 0%
+    }
 }
+
 @-moz-keyframes AnimationName {
-  0%{background-position:94% 0%}
-  50%{background-position:7% 100%}
-  100%{background-position:94% 0%}
+    0% {
+        background-position: 94% 0%
+    }
+    50% {
+        background-position: 7% 100%
+    }
+    100% {
+        background-position: 94% 0%
+    }
 }
+
 @-o-keyframes AnimationName {
-  0%{background-position:94% 0%}
-  50%{background-position:7% 100%}
-  100%{background-position:94% 0%}
+    0% {
+        background-position: 94% 0%
+    }
+    50% {
+        background-position: 7% 100%
+    }
+    100% {
+        background-position: 94% 0%
+    }
 }
+
 @keyframes AnimationName {
-  0%{background-position:94% 0%}
-  50%{background-position:7% 100%}
-  100%{background-position:94% 0%}
+    0% {
+        background-position: 94% 0%
+    }
+    50% {
+        background-position: 7% 100%
+    }
+    100% {
+        background-position: 94% 0%
+    }
 }
 
 .theaterScreen {
-   max-width: 100%;
-   height: 45px;
-   background-color: silver;
-   -webkit-box-shadow: 9px -5px 8px 6px rgba(0, 0, 0, 0.68);
-   -moz-box-shadow: 9px -5px 8px 6px rgba(0, 0, 0, 0.68);
-   box-shadow: 9px -5px 8px 6px rgba(0, 0, 0, 0.68);
-   border-radius: 90px 90px 0 0;
-   -moz-border-radius: 90px 90px 0 0;
-   -webkit-border-radius: 90px 90px 0 0;
-   margin-bottom: 30px;
-   margin-top: 10px;
+    max-width: 100%;
+    height: 45px;
+    background-color: silver;
+    -webkit-box-shadow: 9px -5px 8px 6px rgba(0, 0, 0, 0.68);
+    -moz-box-shadow: 9px -5px 8px 6px rgba(0, 0, 0, 0.68);
+    box-shadow: 9px -5px 8px 6px rgba(0, 0, 0, 0.68);
+    border-radius: 90px 90px 0 0;
+    -moz-border-radius: 90px 90px 0 0;
+    -webkit-border-radius: 90px 90px 0 0;
+    margin-bottom: 30px;
+    margin-top: 10px;
 }
 
 #marquee {
@@ -139,7 +164,6 @@ animation: AnimationName 21s ease infinite;
 
 .seatLegend .openLegend {
     background-color: #BFDBF7;
-
 }
 
 .seatLegend .selectLegend {
@@ -160,14 +184,16 @@ animation: AnimationName 21s ease infinite;
 }
 
 .seatLegend .standardLegend {
-  border: 1px solid black;
-  background-color: #BFDBF7;
-  float: left;
-  width: 20px;
-  height: 20px;
-  margin: 2px;
-  border-radius: 20%;
+    border: 1px solid black;
+    background-color: #BFDBF7;
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin: 2px;
+    border-radius: 20%;
 }
+
+
 /*button {
   margin-left: 250px;
   margin-right: 350px;
@@ -183,9 +209,27 @@ animation: AnimationName 21s ease infinite;
 }*/
 
 .buttonColor {
-  background-color: #053C5E;
-  color: white;
+    background-color: #053C5E;
+    color: white;
 }
+
 .form-group {
-  color: black; 
+    color: black;
+}
+
+#overlay {
+    background: rgba(0, 0, 0, .4);
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 10;
+}
+
+#home_text {
+    background: red;
+    height: 300px;
+    margin: 20px auto 0;
+    width: 300px;
 }

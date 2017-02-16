@@ -69,9 +69,6 @@ $(function() {
 
 
 
-    // $('.reclinerSeat').hover(function(){
-    //     $('div span').removeClass('pStyling').next().stop(true,true);
-    // });
 
 
 
@@ -83,18 +80,13 @@ $(function() {
         $(this).find('form')[0].reset();
     });
 
+    var overlay = $('#overlay');
+    overlay.on('click', function(e) {
+        overlay
+            .hide()
+            .off();
+    });
+
 
 
 });
-
-// $(document).ready(function(){
-//     $("button").click(function(){
-//         var div = $("div");
-//         div.animate({height: '100%px', opacity: '0.8'}, "slow");
-//         div.animate({height: '300px', opacity: '0.6'}, "slow");
-//         div.animate({height: '600px', opacity: '0.4'}, "slow");
-//         div.animate({height: '10%', opacity: '0.0'}, "slow");
-//
-//     });
-// });
-//
