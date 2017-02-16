@@ -64,52 +64,48 @@
 }
 
 body {
-    /*background-color: #A2A0A2;
-    background-repeat: no-repeat;*/
-    background: linear-gradient(43deg, #65e2a7 , #2597ae , #aabdc1 , #2597ae , #65e2a7 );
-    background-size: 1000% 1000%;
+background: linear-gradient(43deg, #717a75, #2597ae, #6b888e, #2597ae);
+background-size: 800% 800%;
 
-    -webkit-animation: AnimationName 45s ease infinite;
-    -moz-animation: AnimationName 45s ease infinite;
-    -o-animation: AnimationName 45s ease infinite;
-    animation: AnimationName 45s ease infinite;
+-webkit-animation: AnimationName 21s ease infinite;
+-moz-animation: AnimationName 21s ease infinite;
+-o-animation: AnimationName 21s ease infinite;
+animation: AnimationName 21s ease infinite;
 }
-    @-webkit-keyframes AnimationName {
-       0%{background-position:94% 0%}
-       50%{background-position:7% 100%}
-       100%{background-position:94% 0%}
-    }
-    @-moz-keyframes AnimationName {
-       0%{background-position:94% 0%}
-       50%{background-position:7% 100%}
-       100%{background-position:94% 0%}
-    }
-    @-o-keyframes AnimationName {
-       0%{background-position:94% 0%}
-       50%{background-position:7% 100%}
-       100%{background-position:94% 0%}
-    }
-    @keyframes AnimationName {
-       0%{background-position:94% 0%}
-       50%{background-position:7% 100%}
-       100%{background-position:94% 0%}
-    }
 
+@-webkit-keyframes AnimationName {
+  0%{background-position:94% 0%}
+  50%{background-position:7% 100%}
+  100%{background-position:94% 0%}
+}
+@-moz-keyframes AnimationName {
+  0%{background-position:94% 0%}
+  50%{background-position:7% 100%}
+  100%{background-position:94% 0%}
+}
+@-o-keyframes AnimationName {
+  0%{background-position:94% 0%}
+  50%{background-position:7% 100%}
+  100%{background-position:94% 0%}
+}
+@keyframes AnimationName {
+  0%{background-position:94% 0%}
+  50%{background-position:7% 100%}
+  100%{background-position:94% 0%}
+}
 
 .theaterScreen {
-    max-width: 100%;
-    height: 45px;
-    background-image: -webkit-linear-gradient(top, #47325c, #cbc8c6, #f2f2f2);
-    background-image: -moz-linear-gradient(top, #47325c, #cbc8c6, #f2f2f2);
-    background-image: linear-gradient(to bottom, #47325c, #cbc8c6, #f2f2f2);
-    -webkit-box-shadow: 9px -5px 8px 6px rgba(0, 0, 0, 0.68);
-    -moz-box-shadow: 9px -5px 8px 6px rgba(0, 0, 0, 0.68);
-    box-shadow: 9px -5px 8px 6px rgba(0, 0, 0, 0.68);
-    border-radius: 90px 90px 0 0;
-    -moz-border-radius: 90px 90px 0 0;
-    -webkit-border-radius: 90px 90px 0 0;
-    margin-bottom: 30px;
-    margin-top: 10px;
+   max-width: 100%;
+   height: 45px;
+   background-color: silver; 
+   -webkit-box-shadow: 9px -5px 8px 6px rgba(0, 0, 0, 0.68);
+   -moz-box-shadow: 9px -5px 8px 6px rgba(0, 0, 0, 0.68);
+   box-shadow: 9px -5px 8px 6px rgba(0, 0, 0, 0.68);
+   border-radius: 90px 90px 0 0;
+   -moz-border-radius: 90px 90px 0 0;
+   -webkit-border-radius: 90px 90px 0 0;
+   margin-bottom: 30px;
+   margin-top: 10px;
 }
 
 #marquee {
