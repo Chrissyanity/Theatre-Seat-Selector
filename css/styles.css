@@ -97,7 +97,7 @@ animation: AnimationName 21s ease infinite;
 .theaterScreen {
    max-width: 100%;
    height: 45px;
-   background-color: silver; 
+   background-color: silver;
    -webkit-box-shadow: 9px -5px 8px 6px rgba(0, 0, 0, 0.68);
    -moz-box-shadow: 9px -5px 8px 6px rgba(0, 0, 0, 0.68);
    box-shadow: 9px -5px 8px 6px rgba(0, 0, 0, 0.68);
@@ -128,13 +128,14 @@ animation: AnimationName 21s ease infinite;
 .seatLegend span {
     border: 1px solid black;
     float: left;
-    width: 12px;
-    height: 12px;
+    width: 15px;
+    height: 15px;
     margin: 2px;
 }
 
 .seatLegend .openLegend {
     background-color: #BFDBF7;
+
 }
 
 .seatLegend .selectLegend {
