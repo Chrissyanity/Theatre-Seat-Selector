@@ -64,6 +64,9 @@
 }
 
 body {
+  font-family: 'Lobster Two', cursive;
+  color: #A4ABB2;
+
 background: linear-gradient(43deg, #717a75, #2597ae, #6b888e, #2597ae);
 background-size: 800% 800%;
 
