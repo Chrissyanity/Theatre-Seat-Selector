@@ -125,3 +125,49 @@ body {
 .seatLegend .reserveLegend {
     background-color: #3F0B46;
 }
+
+/*button {
+  margin-left: 250px;
+  margin-right: 350px;
+  margin-top: 50px;
+  width: 100%;
+  height: 50%;
+  background: #bfdbf7;
+  border: solid;
+  color: black;
+  font-family: 'IM Fell Double Pica SC', serif;
+  font-size: 45px;
+  font-weight: 70;
+}*/
+
+
+
+/*body {
+background: linear-gradient(31deg, #bc2c1a, #1f7a8c, #bc2c1a, #1f7a8c);
+background-size: 800% 800%;
+
+-webkit-animation: TheaterBackground 4s ease infinite;
+-moz-animation: TheaterBackground 4s ease infinite;
+-o-animation: TheaterBackground 4s ease infinite;
+animation: TheaterBackground 4s ease infinite;
+
+@-webkit-keyframes TheaterBackground {
+    0%{background-position:50% 0%}
+    50%{background-position:51% 100%}
+    100%{background-position:50% 0%}
+}
+@-moz-keyframes TheaterBackground {
+    0%{background-position:50% 0%}
+    50%{background-position:51% 100%}
+    100%{background-position:50% 0%}
+}
+@-o-keyframes TheaterBackground {
+    0%{background-position:50% 0%}
+    50%{background-position:51% 100%}
+    100%{background-position:50% 0%}
+}
+@keyframes TheaterBackground {
+    0%{background-position:50% 0%}
+    50%{background-position:51% 100%}
+    100%{background-position:50% 0%}
+}*/
