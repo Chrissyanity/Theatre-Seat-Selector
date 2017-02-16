@@ -30,7 +30,6 @@ $(function() {
     $('.reclinerSeat').on("click",function(event) {
         var id = event.target.id;
         if ($.inArray( id, clickedSeats ) > -1 ) {
-            var itemtoRemove = id;
             clickedSeats.splice($.inArray(id, clickedSeats),1);
             console.log(clickedSeats);
         } else {
@@ -44,7 +43,6 @@ $(function() {
     $('.regularSeat').on("click", function(event) {
         var id = event.target.id;
         if ($.inArray( id, clickedSeats ) > -1 ) {
-            var itemtoRemove = id;
             clickedSeats.splice($.inArray(id, clickedSeats),1);
             console.log(clickedSeats);
         } else {
@@ -66,6 +64,7 @@ $(function() {
 
 
             // .html('<p class="pStyling">'+lastName+'</p>');
+            //add this code with hidden styling, and then make a mousover event to change that class to visible outside of this forEach loop
 
 
 

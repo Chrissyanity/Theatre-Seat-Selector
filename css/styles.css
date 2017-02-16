@@ -8,6 +8,8 @@
     border-radius: 20px 20px 90px 90px;
      -moz-border-radius: 20px 20px 90px 90px;
      -webkit-border-radius: 20px 20px 90px 90px;
+     font-size: 200%;
+
 }
 
 .regularSeat {
@@ -17,6 +19,8 @@
     height: 100px;
     display: inline-block;
     border-radius: 10%;
+    font-size: 200%;
+
 }
 
 .row {
