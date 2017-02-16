@@ -1,5 +1,5 @@
 .reclinerSeat {
-    background: silver;
+    background: #BFDBF7;
     display: inline-block;
     max-width: 175px;
     height: 125px;
@@ -12,7 +12,7 @@
 }
 
 .regularSeat {
-    background: silver;
+    background: #BFDBF7;
     width: 12.2%;
     max-width: 150px;
     height: 100px;
@@ -42,19 +42,17 @@
     margin-bottom: 5px;
 }
 
-
-
 .hover {
     /*background-color: #3F0B46;*/
     opacity: 0.4;
 }
 
 .selectedSeat {
-    background-color: #8F3F99;
+    background-color: #90323D;
 }
 
 .reservedSeat {
-    background-color: #3F0B46;
+    background-color: #053C5E;
 }
 
 .pStyling2 {
@@ -65,13 +63,38 @@
     visibility: visible;
 }
 
-
-
-
 body {
-    background-color: #A2A0A2;
-    background-repeat: no-repeat;
+    /*background-color: #A2A0A2;
+    background-repeat: no-repeat;*/
+    background: linear-gradient(43deg, #65e2a7 , #2597ae , #aabdc1 , #2597ae , #65e2a7 );
+    background-size: 1000% 1000%;
+
+    -webkit-animation: AnimationName 45s ease infinite;
+    -moz-animation: AnimationName 45s ease infinite;
+    -o-animation: AnimationName 45s ease infinite;
+    animation: AnimationName 45s ease infinite;
 }
+    @-webkit-keyframes AnimationName {
+       0%{background-position:94% 0%}
+       50%{background-position:7% 100%}
+       100%{background-position:94% 0%}
+    }
+    @-moz-keyframes AnimationName {
+       0%{background-position:94% 0%}
+       50%{background-position:7% 100%}
+       100%{background-position:94% 0%}
+    }
+    @-o-keyframes AnimationName {
+       0%{background-position:94% 0%}
+       50%{background-position:7% 100%}
+       100%{background-position:94% 0%}
+    }
+    @keyframes AnimationName {
+       0%{background-position:94% 0%}
+       50%{background-position:7% 100%}
+       100%{background-position:94% 0%}
+    }
+
 
 .theaterScreen {
     max-width: 100%;
@@ -98,15 +121,16 @@ body {
 
 .seatLegend {
     list-style: none;
+    padding: 10px;
 }
 
 .seatLegend li {
-    float: left;
     margin-right: 10px;
+    display: inline-block;
 }
 
 .seatLegend span {
-    border: 1px solid #ccc;
+    border: 1px solid black;
     float: left;
     width: 12px;
     height: 12px;
@@ -114,17 +138,35 @@ body {
 }
 
 .seatLegend .openLegend {
-    background-color: silver;
+    background-color: #BFDBF7;
 }
 
 .seatLegend .selectLegend {
-    background-color: #8F3F99;
+    background-color: #90323D;
 }
 
 .seatLegend .reserveLegend {
-    background-color: #3F0B46;
+    background-color: #053C5E;
 }
 
+.seatLegend .luxuryLegend {
+    background-color: #BFDBF7;
+    width: 20px;
+    height: 20px;
+    border-radius: 5px 5px 10px 10px;
+    -moz-border-radius: 5px 5px 10px 10px;
+    -webkit-border-radius: 5px 5px 10px 10px;
+}
+
+.seatLegend .standardLegend {
+  border: 1px solid black;
+  background-color: #BFDBF7;
+  float: left;
+  width: 20px;
+  height: 20px;
+  margin: 2px;
+  border-radius: 20%;
+}
 /*button {
   margin-left: 250px;
   margin-right: 350px;
@@ -139,34 +181,7 @@ body {
   font-weight: 70;
 }*/
 
-
-
-/*body {
-background: linear-gradient(31deg, #bc2c1a, #1f7a8c, #bc2c1a, #1f7a8c);
-background-size: 800% 800%;
-
--webkit-animation: TheaterBackground 4s ease infinite;
--moz-animation: TheaterBackground 4s ease infinite;
--o-animation: TheaterBackground 4s ease infinite;
-animation: TheaterBackground 4s ease infinite;
-
-@-webkit-keyframes TheaterBackground {
-    0%{background-position:50% 0%}
-    50%{background-position:51% 100%}
-    100%{background-position:50% 0%}
+.buttonColor {
+  background-color: #053C5E;
+  color: white;
 }
-@-moz-keyframes TheaterBackground {
-    0%{background-position:50% 0%}
-    50%{background-position:51% 100%}
-    100%{background-position:50% 0%}
-}
-@-o-keyframes TheaterBackground {
-    0%{background-position:50% 0%}
-    50%{background-position:51% 100%}
-    100%{background-position:50% 0%}
-}
-@keyframes TheaterBackground {
-    0%{background-position:50% 0%}
-    50%{background-position:51% 100%}
-    100%{background-position:50% 0%}
-}*/

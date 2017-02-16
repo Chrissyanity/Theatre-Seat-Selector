@@ -32,7 +32,7 @@
                 <div id="A-1" class="reclinerSeat">
                     A-1
                     <br />
-                     <span class='pStyling2'>-</span>
+                    <span class='pStyling2'>-</span>
                 </div>
                 <div id='A-2' class="reclinerSeat">
                     A-2
@@ -105,8 +105,16 @@
             <div class="col-xs-10">
                 <div class="aisleLine1 center-block">
                 </div>
-                <div>
+                <div class="center-block">
                     <h1 id="marquee">Fantastic IV Theaters</h1>
+                    <ul class="seatLegend">
+                        <li><span class="standardLegend"></span>Standard Seating</li>
+                        <li><span class="luxuryLegend"></span>Premium Seating</li></br>
+                        <li><span class="openLegend"></span>Available</li>
+                        <li><span class="selectLegend"></span>Selected</li>
+                        <li><span class="reserveLegend"></span>Reserved</li>
+
+                    </ul>
                 </div>
                 <div class="aisleLine2 center-block">
                 </div>
@@ -220,7 +228,7 @@
 
 
                 <!-- Small modal -->
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-sm">Reserve Seats</button>
+                <button type="button" class="btn btn-primary buttonColor" data-toggle="modal" data-target=".bd-example-modal-sm">Reserve Seats</button>
 
                 <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-sm">
@@ -246,7 +254,7 @@
                                 </div>
 
 
-                                <button data-dismiss='modal' type="button" id='reserveButton' class="btn btn-default">Confirm</button>
+                                <button data-dismiss='modal' type="button" id='reserveButton' class="btn btn-default buttonColor">Confirm</button>
                             </form>
                         </div>
                     </div>
@@ -256,14 +264,7 @@
 
             </div>
             <div class="col-xs-6">
-                <footer>
-                    <ul class="seatLegend">
-                        <li><span class="openLegend"></span>Available</li>
-                        <li><span class="selectLegend"></span>Selected</li>
-                        <li><span class="reserveLegend"></span>Reserved</li>
 
-                    </ul>
-                </footer>
             </div>
         </div>
 
